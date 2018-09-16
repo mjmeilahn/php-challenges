@@ -34,5 +34,5 @@ function plusMinus($arr) {
 
 
 
-echo plusMinus($numbers);
+return print plusMinus($numbers);
 
