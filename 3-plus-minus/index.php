@@ -29,10 +29,10 @@ function plusMinus($arr) {
     $negativePercent = number_format($negatives, 6, '.', '');
     $zeroPercent = number_format($zeroes, 6, '.', '');
 
-    echo "$positivePercent \n$negativePercent \n$zeroPercent";
+    print "$positivePercent \n$negativePercent \n$zeroPercent";
 }
 
 
 
-return print plusMinus($numbers);
+return plusMinus($numbers);
 
