@@ -11,6 +11,7 @@ function plusMinus($arr) {
     $negatives = 0;
     $zeroes = 0;
 
+    // increment counters representing initial state
     foreach ($arr as $i) {
         if ($i === 0) {
             $zeroes++;
@@ -21,10 +22,12 @@ function plusMinus($arr) {
         }
     }
 
+    // calculate ratios
     $positives = $positives / $denom;
     $negatives = $negatives / $denom;
     $zeroes = $zeroes / $denom;
 
+    // format numerical data to be printed
     $positivePercent = number_format($positives, 6, '.', '');
     $negativePercent = number_format($negatives, 6, '.', '');
     $zeroPercent = number_format($zeroes, 6, '.', '');
@@ -35,4 +38,3 @@ function plusMinus($arr) {
 
 
 return plusMinus($numbers);
-

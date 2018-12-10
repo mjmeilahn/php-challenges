@@ -14,5 +14,3 @@ function simpleArraySum($ar) {
 }
 
 return print simpleArraySum($numbers);
-
-?>
